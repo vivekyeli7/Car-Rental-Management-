@@ -1,9 +1,9 @@
 # Vehicle Rental Management System
 
-## Overview
+## 🌟 Overview
 The Vehicle Rental Management System is a C++ application designed to manage vehicle rentals efficiently. The system allows users to browse, rent, and return vehicles such as cars and bikes. It also features an admin interface for adding or removing vehicles and managing user information. This system leverages Object-Oriented Programming (OOP) principles for scalability and maintainability, providing a smooth user experience for both regular users and administrators.
 
-## Features
+## 🛠️ Features
 ### 🚗 Vehicle Management
 - Manage a fleet of cars and bikes with unique vehicle IDs, models, and rental prices.
 
@@ -27,7 +27,7 @@ The Vehicle Rental Management System is a C++ application designed to manage veh
 - Remove existing vehicles from the fleet.
 - View all registered users in the system.
 
-## Classes
+## 📚 Classes
 ### Vehicle (Base Class)
 - Represents a generic vehicle, with attributes like vehicleID, model, rentalPricePerDay, and rental status.
 
@@ -47,11 +47,30 @@ The Vehicle Rental Management System is a C++ application designed to manage veh
 ### RentalService
 - The user interface class that interacts with the user and handles commands for renting vehicles, returning vehicles, and accessing the admin features.
 
-## Usage
+## User Actions:
+### View Available Vehicles
+- Shows all vehicles that are currently available for rent.
 
+### Rent a Vehicle
+- Allows users to rent a car or bike for a specific number of days.
+
+### Return a Vehicle
+- Users can return a vehicle, and the system will calculate the rental cost based on the rental period.
+
+### View Rental History
+- Displays past rental records, including vehicle details, rental dates, and users.
+
+### Filter Vehicles
+- Allows users to filter available vehicles based on price range and type (Car or Bike).
+
+### Admin Features
+- Admins can log in and manage vehicles by adding or removing them from the system.
+- Admins can also view all registered users.
+
+## 🚀 Usage
 ### Build and Run the Project
 To compile and execute the project, use a C++ compiler like `g++`. Run the following commands:
 
 ```bash
-g++ -o car_rental src/*.cpp
+g++ -o car_rental Car_Rental_System.cpp
 ./car_rental
